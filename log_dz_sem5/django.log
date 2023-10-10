@@ -1,0 +1,506 @@
+INFO 2023-10-05 20:05:17,490 autoreload 10520 9184 Watching for file changes with StatReloader
+WARNING 2023-10-05 20:05:19,106 log 10520 1184 Not Found: /
+WARNING 2023-10-05 20:05:19,107 basehttp 10520 1184 "GET / HTTP/1.1" 404 2171
+WARNING 2023-10-05 20:05:19,188 log 10520 1184 Not Found: /favicon.ico
+WARNING 2023-10-05 20:05:19,189 basehttp 10520 1184 "GET /favicon.ico HTTP/1.1" 404 2222
+ERROR 2023-10-05 20:05:30,887 log 10520 1184 Internal Server Error: /dz_sem5app/
+Traceback (most recent call last):
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\PycharmProjects\pythonProject2\Django_dz\dz_sem5\dz_sem5app\views.py", line 12, in index
+    return render(request, 'dz_sem5app/index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dz_sem5app/index.html
+ERROR 2023-10-05 20:05:30,890 basehttp 10520 1184 "GET /dz_sem5app/ HTTP/1.1" 500 82933
+INFO 2023-10-05 20:07:13,008 autoreload 10520 9184 C:\Users\nikol\PycharmProjects\pythonProject2\Django_dz\dz_sem5\templates\base.py changed, reloading.
+INFO 2023-10-05 20:07:13,367 autoreload 10204 13832 Watching for file changes with StatReloader
+ERROR 2023-10-05 20:07:40,706 log 10204 4424 Internal Server Error: /dz_sem5app/
+Traceback (most recent call last):
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\PycharmProjects\pythonProject2\Django_dz\dz_sem5\dz_sem5app\views.py", line 12, in index
+    return render(request, 'dz_sem5app/index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dz_sem5app/index.html
+ERROR 2023-10-05 20:07:40,708 basehttp 10204 4424 "GET /dz_sem5app/ HTTP/1.1" 500 82921
+INFO 2023-10-05 20:08:25,005 basehttp 10204 4424 "GET /dz_sem5app/show_products HTTP/1.1" 301 0
+ERROR 2023-10-05 20:08:25,027 log 10204 3968 Internal Server Error: /dz_sem5app/show_products/
+Traceback (most recent call last):
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\PycharmProjects\pythonProject2\Django_dz\dz_sem5\dz_sem5app\views.py", line 73, in show_products
+    return render(request, 'dz_sem5app/index.html', {'products': products})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dz_sem5app/index.html
+ERROR 2023-10-05 20:08:25,029 basehttp 10204 3968 "GET /dz_sem5app/show_products/ HTTP/1.1" 500 83504
+INFO 2023-10-05 20:09:55,126 basehttp 10204 3968 "GET /dz_sem5app/update_product HTTP/1.1" 301 0
+INFO 2023-10-05 20:09:55,148 basehttp 10204 10780 "GET /dz_sem5app/update_product/ HTTP/1.1" 200 2115
+INFO 2023-10-05 20:10:37,700 basehttp 10204 10780 "GET /dz_sem5app/add_product HTTP/1.1" 301 0
+INFO 2023-10-05 20:10:37,705 basehttp 10204 3736 "GET /dz_sem5app/add_product/ HTTP/1.1" 200 1773
+WARNING 2023-10-05 20:10:50,066 log 10204 3736 Not Found: /dz_sem5app/index
+WARNING 2023-10-05 20:10:50,066 basehttp 10204 3736 "GET /dz_sem5app/index HTTP/1.1" 404 3070
+WARNING 2023-10-05 20:10:55,851 log 10204 3736 Not Found: /dz_sem5app/index/5
+WARNING 2023-10-05 20:10:55,851 basehttp 10204 3736 "GET /dz_sem5app/index/5 HTTP/1.1" 404 3076
+ERROR 2023-10-05 20:11:13,844 log 10204 3736 Internal Server Error: /dz_sem5app/show_products/
+Traceback (most recent call last):
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\PycharmProjects\pythonProject2\Django_dz\dz_sem5\dz_sem5app\views.py", line 73, in show_products
+    return render(request, 'dz_sem5app/index.html', {'products': products})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dz_sem5app/index.html
+ERROR 2023-10-05 20:11:13,846 basehttp 10204 3736 "GET /dz_sem5app/show_products/ HTTP/1.1" 500 83504
+INFO 2023-10-05 20:11:33,388 basehttp 10204 3736 "GET /dz_sem5app/show_clients HTTP/1.1" 301 0
+ERROR 2023-10-05 20:11:33,408 log 10204 13560 Internal Server Error: /dz_sem5app/show_clients/
+Traceback (most recent call last):
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\PycharmProjects\pythonProject2\Django_dz\dz_sem5\dz_sem5app\views.py", line 78, in show_clients
+    return render(request, 'dz_sem5app/index.html', {'clients': clients})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dz_sem5app/index.html
+ERROR 2023-10-05 20:11:33,410 basehttp 10204 13560 "GET /dz_sem5app/show_clients/ HTTP/1.1" 500 82427
+INFO 2023-10-05 20:12:18,644 basehttp 10204 13560 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:12:18,658 basehttp 10204 13560 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-05 20:12:18,758 basehttp 10204 13560 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:12:18,760 basehttp 10204 9728 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:12:18,760 basehttp 10204 12164 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:12:18,762 basehttp 10204 12164 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:12:18,771 basehttp 10204 13560 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2023-10-05 20:12:18,771 basehttp 10204 9728 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2023-10-05 20:12:18,771 basehttp 10204 12164 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:12:19,678 basehttp 10204 13560 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:12:19,683 basehttp 10204 13560 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-05 20:12:30,524 basehttp 10204 13560 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:12:41,326 basehttp 10204 13560 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:12:47,453 basehttp 10204 13560 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:13:13,346 autoreload 5476 10520 Watching for file changes with StatReloader
+INFO 2023-10-05 20:13:17,812 basehttp 5476 2952 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:13:46,179 basehttp 5476 2952 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:13:53,737 basehttp 5476 2952 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:14:16,012 basehttp 5476 2952 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:15:58,975 autoreload 8868 5532 Watching for file changes with StatReloader
+INFO 2023-10-05 20:16:04,256 basehttp 8868 7732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:16:12,306 basehttp 8868 7732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:16:19,294 basehttp 8868 7732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:16:32,171 basehttp 8868 7732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:16:39,883 basehttp 8868 7732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:16:48,848 basehttp 8868 7732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:17:19,788 basehttp 8868 7732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:17:56,501 basehttp 8868 7732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:18:06,754 basehttp 8868 7732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:18:11,101 basehttp 8868 7732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:18:32,752 basehttp 8868 7732 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:18:32,757 basehttp 8868 7732 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-05 20:18:40,149 basehttp 8868 7732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:18:46,399 basehttp 8868 7732 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:18:46,404 basehttp 8868 7732 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-05 20:18:47,637 basehttp 8868 7732 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:18:47,642 basehttp 8868 7732 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-05 20:18:59,736 basehttp 8868 7732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:19:07,763 basehttp 8868 7732 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:19:07,768 basehttp 8868 7732 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-05 20:19:18,981 basehttp 8868 7732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:19:26,289 basehttp 8868 7732 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:19:26,293 basehttp 8868 7732 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-05 20:19:37,650 basehttp 8868 7732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:19:50,716 basehttp 8868 7732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:20:48,605 basehttp 8868 7732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:20:56,869 basehttp 8868 7732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+WARNING 2023-10-05 20:21:06,763 log 8868 7732 Not Found: /
+WARNING 2023-10-05 20:21:06,764 basehttp 8868 7732 "GET / HTTP/1.1" 404 2171
+INFO 2023-10-05 20:21:18,050 basehttp 8868 7732 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:21:18,055 basehttp 8868 7732 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-05 20:21:19,092 basehttp 8868 7732 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:21:19,097 basehttp 8868 7732 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-05 20:21:41,926 basehttp 8868 7732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:21:48,977 basehttp 8868 7732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:22:03,176 basehttp 8868 7732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:22:11,667 basehttp 8868 7732 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:22:11,671 basehttp 8868 7732 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-05 20:22:21,652 basehttp 8868 7732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:45:10,327 basehttp 8868 13896 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4539
+INFO 2023-10-05 20:45:20,848 basehttp 8868 13896 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4539
+INFO 2023-10-05 20:45:32,876 basehttp 8868 13896 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4534
+INFO 2023-10-05 20:45:39,333 basehttp 8868 13896 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4534
+INFO 2023-10-05 20:46:12,799 basehttp 8868 13896 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+WARNING 2023-10-05 20:46:39,300 log 8868 13896 Not Found: /
+WARNING 2023-10-05 20:46:39,300 basehttp 8868 13896 "GET / HTTP/1.1" 404 2171
+ERROR 2023-10-05 20:46:56,884 log 8868 13896 Internal Server Error: /dz_sem5app/
+Traceback (most recent call last):
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\PycharmProjects\pythonProject2\Django_dz\dz_sem5\dz_sem5app\views.py", line 12, in index
+    return render(request, 'dz_sem5app/index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dz_sem5app/index.html
+ERROR 2023-10-05 20:46:56,886 basehttp 8868 13896 "GET /dz_sem5app/ HTTP/1.1" 500 82784
+ERROR 2023-10-05 20:47:11,812 log 8868 13896 Internal Server Error: /dz_sem5app/show_products/
+Traceback (most recent call last):
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\PycharmProjects\pythonProject2\Django_dz\dz_sem5\dz_sem5app\views.py", line 73, in show_products
+    return render(request, 'dz_sem5app/index.html', {'products': products})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dz_sem5app/index.html
+ERROR 2023-10-05 20:47:11,814 basehttp 8868 13896 "GET /dz_sem5app/show_products/ HTTP/1.1" 500 83504
+INFO 2023-10-05 20:47:27,724 basehttp 8868 13896 "GET /dz_sem5app/update_product/ HTTP/1.1" 200 2115
+INFO 2023-10-05 20:49:11,290 basehttp 8868 13896 "GET /dz_sem5app/add_product/ HTTP/1.1" 200 1773
+INFO 2023-10-05 20:49:41,190 basehttp 8868 13896 "POST /dz_sem5app/add_product/ HTTP/1.1" 200 1826
+WARNING 2023-10-05 20:50:02,462 log 8868 13896 Not Found: /dz_sem5app/index
+WARNING 2023-10-05 20:50:02,463 basehttp 8868 13896 "GET /dz_sem5app/index HTTP/1.1" 404 3070
+INFO 2023-10-05 20:50:19,896 basehttp 8868 13896 "GET /dz_sem5app/update_product/ HTTP/1.1" 200 2154
+INFO 2023-10-05 20:50:48,789 basehttp 8868 13896 "POST /dz_sem5app/update_product/ HTTP/1.1" 200 2155
+ERROR 2023-10-05 20:51:03,625 log 8868 13896 Internal Server Error: /dz_sem5app/show_products/
+Traceback (most recent call last):
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\PycharmProjects\pythonProject2\Django_dz\dz_sem5\dz_sem5app\views.py", line 73, in show_products
+    return render(request, 'dz_sem5app/index.html', {'products': products})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dz_sem5app/index.html
+ERROR 2023-10-05 20:51:03,627 basehttp 8868 13896 "GET /dz_sem5app/show_products/ HTTP/1.1" 500 83853
+ERROR 2023-10-05 20:51:04,604 log 8868 13896 Internal Server Error: /dz_sem5app/show_products/
+Traceback (most recent call last):
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\PycharmProjects\pythonProject2\Django_dz\dz_sem5\dz_sem5app\views.py", line 73, in show_products
+    return render(request, 'dz_sem5app/index.html', {'products': products})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dz_sem5app/index.html
+ERROR 2023-10-05 20:51:04,606 basehttp 8868 13896 "GET /dz_sem5app/show_products/ HTTP/1.1" 500 83579
+ERROR 2023-10-05 20:51:56,638 log 8868 13896 Internal Server Error: /dz_sem5app/show_clients/
+Traceback (most recent call last):
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\PycharmProjects\pythonProject2\Django_dz\dz_sem5\dz_sem5app\views.py", line 78, in show_clients
+    return render(request, 'dz_sem5app/index.html', {'clients': clients})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dz_sem5app/index.html
+ERROR 2023-10-05 20:51:56,640 basehttp 8868 13896 "GET /dz_sem5app/show_clients/ HTTP/1.1" 500 82427
+INFO 2023-10-05 20:54:33,886 basehttp 8868 13896 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:54:33,891 basehttp 8868 13896 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-05 20:54:37,911 basehttp 8868 13896 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:54:37,916 basehttp 8868 13896 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-05 20:54:49,151 basehttp 8868 13896 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:55:20,522 autoreload 9412 14240 Watching for file changes with StatReloader
+INFO 2023-10-05 20:55:23,189 basehttp 9412 10196 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:55:23,212 basehttp 9412 10196 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-05 20:55:38,541 basehttp 9412 10196 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:55:49,906 basehttp 9412 10196 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:55:57,292 basehttp 9412 10196 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:56:54,165 basehttp 9412 10196 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:57:00,483 basehttp 9412 10196 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:57:10,054 basehttp 9412 10196 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:57:34,755 basehttp 9412 10196 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:57:52,210 basehttp 9412 10196 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:57:52,215 basehttp 9412 10196 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-05 20:58:06,853 basehttp 9412 10196 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:59:30,896 basehttp 9412 10196 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:59:37,809 basehttp 9412 10196 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:59:51,323 basehttp 9412 10196 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 20:59:56,735 basehttp 9412 10196 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 21:00:43,309 basehttp 9412 10196 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 21:00:49,042 basehttp 9412 10196 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 21:01:00,038 basehttp 9412 10196 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 21:01:04,643 basehttp 9412 10196 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4537
+INFO 2023-10-05 21:03:57,619 autoreload 5708 13188 Watching for file changes with StatReloader
+WARNING 2023-10-05 21:03:59,479 log 5708 1800 Not Found: /
+WARNING 2023-10-05 21:03:59,479 basehttp 5708 1800 "GET / HTTP/1.1" 404 2171
+INFO 2023-10-05 21:04:04,031 basehttp 5708 1800 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-05 21:04:04,057 basehttp 5708 1800 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-05 21:04:07,121 basehttp 5708 1800 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-05 21:04:07,126 basehttp 5708 1800 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-05 21:04:16,432 basehttp 5708 1800 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2023-10-05 21:04:16,445 basehttp 5708 1800 "GET /admin/ HTTP/1.1" 200 7475
+INFO 2023-10-05 21:04:16,493 basehttp 5708 1800 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2023-10-05 21:04:16,497 basehttp 5708 1800 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2023-10-05 21:04:16,497 basehttp 5708 4896 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2023-10-05 21:04:26,266 basehttp 5708 1800 "GET /admin/auth/user/ HTTP/1.1" 200 12498
+INFO 2023-10-05 21:04:26,278 basehttp 5708 1800 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:04:26,284 basehttp 5708 1800 "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO 2023-10-05 21:04:26,286 basehttp 5708 1864 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2023-10-05 21:04:26,287 basehttp 5708 9916 "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+INFO 2023-10-05 21:04:26,290 basehttp 5708 1800 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2023-10-05 21:04:26,290 basehttp 5708 4896 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 21:04:26,290 basehttp 5708 13800 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+INFO 2023-10-05 21:04:26,291 basehttp 5708 1864 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2023-10-05 21:04:26,293 basehttp 5708 10064 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+INFO 2023-10-05 21:04:26,294 basehttp 5708 9916 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2023-10-05 21:04:26,296 basehttp 5708 9916 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2023-10-05 21:04:26,298 basehttp 5708 10064 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2023-10-05 21:04:26,304 basehttp 5708 10064 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2023-10-05 21:04:26,319 basehttp 5708 10064 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2023-10-05 21:04:26,320 basehttp 5708 9916 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2023-10-05 21:04:30,710 basehttp 5708 9916 "GET /admin/dz_sem5app/order/ HTTP/1.1" 200 9899
+INFO 2023-10-05 21:04:30,724 basehttp 5708 9916 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 21:04:35,729 basehttp 5708 9916 "GET /admin/dz_sem5app/order/add/ HTTP/1.1" 200 11206
+INFO 2023-10-05 21:04:35,740 basehttp 5708 9916 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:04:35,742 basehttp 5708 1864 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2023-10-05 21:04:35,743 basehttp 5708 10064 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 21:04:35,744 basehttp 5708 1864 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:04:35,745 basehttp 5708 1864 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2023-10-05 21:04:53,102 basehttp 5708 1864 "GET /admin/dz_sem5app/product/ HTTP/1.1" 200 12614
+INFO 2023-10-05 21:04:53,115 basehttp 5708 1864 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 21:05:01,026 basehttp 5708 1864 "GET /admin/dz_sem5app/product/?o=4 HTTP/1.1" 200 12766
+INFO 2023-10-05 21:05:01,041 basehttp 5708 1864 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 21:05:06,195 basehttp 5708 1864 "GET /admin/dz_sem5app/product/add/?_changelist_filters=o%3D4 HTTP/1.1" 200 12385
+INFO 2023-10-05 21:05:06,209 basehttp 5708 1864 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 21:05:15,594 basehttp 5708 1864 "GET /admin/auth/group/add/ HTTP/1.1" 200 13302
+INFO 2023-10-05 21:05:15,607 basehttp 5708 10064 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2023-10-05 21:05:15,609 basehttp 5708 9916 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15292
+INFO 2023-10-05 21:05:15,609 basehttp 5708 1864 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 21:05:15,642 basehttp 5708 9916 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2023-10-05 21:05:15,642 basehttp 5708 1864 "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2023-10-05 21:05:15,642 basehttp 5708 10064 "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO 2023-10-05 21:05:26,204 basehttp 5708 10064 "GET /admin/auth/user/ HTTP/1.1" 200 12498
+INFO 2023-10-05 21:05:26,217 basehttp 5708 10064 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+WARNING 2023-10-05 21:05:32,859 log 5708 10064 Not Found: /
+WARNING 2023-10-05 21:05:32,859 basehttp 5708 10064 "GET / HTTP/1.1" 404 2171
+INFO 2023-10-08 11:11:11,528 autoreload 5444 5796 Watching for file changes with StatReloader
+WARNING 2023-10-08 11:11:12,983 log 5444 12756 Not Found: /
+WARNING 2023-10-08 11:11:12,984 basehttp 5444 12756 "GET / HTTP/1.1" 404 2171
+WARNING 2023-10-08 11:11:13,088 log 5444 12756 Not Found: /favicon.ico
+WARNING 2023-10-08 11:11:13,088 basehttp 5444 12756 "GET /favicon.ico HTTP/1.1" 404 2222
+INFO 2023-10-08 11:16:51,382 autoreload 14476 8184 Watching for file changes with StatReloader
+WARNING 2023-10-08 11:16:54,784 log 14476 8252 Not Found: /
+WARNING 2023-10-08 11:16:54,784 basehttp 14476 8252 "GET / HTTP/1.1" 404 2171
+WARNING 2023-10-08 11:17:07,366 log 14476 8252 Not Found: /
+WARNING 2023-10-08 11:17:07,367 basehttp 14476 8252 "GET / HTTP/1.1" 404 2171
+ERROR 2023-10-08 11:17:11,587 log 14476 8252 Internal Server Error: /dz_sem5app/
+Traceback (most recent call last):
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\PycharmProjects\pythonProject2\Django_dz\dz_sem5\dz_sem5app\views.py", line 12, in index
+    return render(request, 'dz_sem5app/index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dz_sem5app/index.html
+ERROR 2023-10-08 11:17:11,590 basehttp 14476 8252 "GET /dz_sem5app/ HTTP/1.1" 500 83064
+WARNING 2023-10-08 11:17:32,979 log 14476 8252 Not Found: /dz_sem5app/6
+WARNING 2023-10-08 11:17:32,980 basehttp 14476 8252 "GET /dz_sem5app/6 HTTP/1.1" 404 3058
+ERROR 2023-10-08 11:17:51,322 log 14476 8252 Internal Server Error: /dz_sem5app/show_products/
+Traceback (most recent call last):
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\PycharmProjects\pythonProject2\Django_dz\dz_sem5\dz_sem5app\views.py", line 73, in show_products
+    return render(request, 'dz_sem5app/index.html', {'products': products})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dz_sem5app/index.html
+ERROR 2023-10-08 11:17:51,324 basehttp 14476 8252 "GET /dz_sem5app/show_products/ HTTP/1.1" 500 83859
+WARNING 2023-10-08 11:18:19,116 log 14476 8252 Not Found: /show_clients/5
+WARNING 2023-10-08 11:18:19,117 basehttp 14476 8252 "GET /show_clients/5 HTTP/1.1" 404 2231
+INFO 2023-10-10 20:48:18,429 autoreload 240 3584 Watching for file changes with StatReloader
+WARNING 2023-10-10 20:48:21,074 log 240 3956 Not Found: /
+WARNING 2023-10-10 20:48:21,074 basehttp 240 3956 "GET / HTTP/1.1" 404 2171
+WARNING 2023-10-10 20:48:29,707 log 240 3956 Not Found: /
+WARNING 2023-10-10 20:48:29,707 basehttp 240 3956 "GET / HTTP/1.1" 404 2171
+ERROR 2023-10-10 20:48:34,118 log 240 3956 Internal Server Error: /dz_sem5app/
+Traceback (most recent call last):
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\PycharmProjects\pythonProject2\Django_dz\dz_sem5\dz_sem5app\views.py", line 12, in index
+    return render(request, 'dz_sem5app/index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dz_sem5app/index.html
+ERROR 2023-10-10 20:48:34,121 basehttp 240 3956 "GET /dz_sem5app/ HTTP/1.1" 500 83379
+ERROR 2023-10-10 20:48:35,253 log 240 3956 Internal Server Error: /dz_sem5app/
+Traceback (most recent call last):
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\PycharmProjects\pythonProject2\Django_dz\dz_sem5\dz_sem5app\views.py", line 12, in index
+    return render(request, 'dz_sem5app/index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dz_sem5app/index.html
+ERROR 2023-10-10 20:48:35,255 basehttp 240 3956 "GET /dz_sem5app/ HTTP/1.1" 500 83105
+WARNING 2023-10-10 20:48:44,398 log 240 3956 Not Found: /dz_sem5app/5
+WARNING 2023-10-10 20:48:44,398 basehttp 240 3956 "GET /dz_sem5app/5 HTTP/1.1" 404 3058
+ERROR 2023-10-10 20:48:52,099 log 240 3956 Internal Server Error: /dz_sem5app/
+Traceback (most recent call last):
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\PycharmProjects\pythonProject2\Django_dz\dz_sem5\dz_sem5app\views.py", line 12, in index
+    return render(request, 'dz_sem5app/index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikol\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dz_sem5app/index.html
+ERROR 2023-10-10 20:48:52,100 basehttp 240 3956 "GET /dz_sem5app/ HTTP/1.1" 500 83379
+INFO 2023-10-10 20:49:00,415 basehttp 240 3956 "GET /dz_sem5app/update_product/ HTTP/1.1" 200 2154
